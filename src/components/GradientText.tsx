@@ -1,4 +1,5 @@
 import React from "react";
+import { gradientStleObj } from "../helper/style";
 
 interface Props {
   className?: string;
@@ -6,15 +7,10 @@ interface Props {
 }
 const GradientText = ({ className, text }: Props) => {
   return (
-    <h1 className={`${className}`} style={{ ...stleObj }}>
+    <h1 className={`${className} font-medium`} style={{ ...gradientStleObj }}>
       {text}
     </h1>
   );
 };
 
 export default GradientText;
-
-const stleObj = {
-  WebkitTextFillColor: "transparent",
-  WebkitBackgroundClip: "text",
-};

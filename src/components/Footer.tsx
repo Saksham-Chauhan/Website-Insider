@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { discord, github, linkedin, logo, twitter } from "../assets";
 import { footerButtons } from "../helper/constant";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex justify-center  px-20 py-10 bg-main-secondary">
@@ -34,8 +36,9 @@ const Footer = () => {
                   <p
                     key={i}
                     className="text-main-light_white mt-3 cursor-pointer hover:text-white w-fit"
+                    onClick={() => navigate(item.route)}
                   >
-                    {item}
+                    {item.title}
                   </p>
                 ))}
               </div>

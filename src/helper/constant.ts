@@ -33,18 +33,38 @@ export const testmonialLogo: Array<TestmonialData> = [
 ];
 
 export const footerButtons = [
-  { title: "Resources", buttons: ["About", "Jobs", "Contact"] },
+  {
+    title: "Resources",
+    buttons: [
+      { title: "About", route: "", target: false },
+      { title: "Jobs", route: "", target: false },
+      { title: "Contact", route: "", target: false },
+    ],
+  },
   {
     title: "Quick Links",
-    buttons: ["Blogs", "Portfolio", "Pricing", "Payments"],
+    buttons: [
+      { title: "Blogs", route: "blog", target: false },
+      { title: "Portfolio", route: "", target: false },
+      { title: "Pricing", route: "", target: false },
+      { title: "Payments", route: "", target: false },
+    ],
   },
   {
     title: "Legal",
-    buttons: ["Privacy Policy", "Terms of Services", "Cancellation", "Refund"],
+    buttons: [
+      { title: "Privacy Policy", route: "", target: false },
+      { title: "Terms of Services", route: "", target: false },
+      { title: "Cancellation", route: "", target: false },
+      { title: "Refund", route: "", target: false },
+    ],
   },
   {
     title: "Support",
-    buttons: ["GitHub", "Help"],
+    buttons: [
+      { title: "GitHub", route: "", target: false },
+      { title: "Help", route: "", target: false },
+    ],
   },
 ];
 
@@ -58,3 +78,16 @@ export const reviews = [
     logo: googleLogo,
   };
 });
+
+export const typeOfProjects = [
+  "Web Development",
+  "Mobile Development",
+  "Website Design",
+  "Desktop App",
+  "Toolbots",
+  "Integration",
+  "UI?UX",
+  "Backend Development",
+  "Web Scraper",
+  "Discord Bots",
+];

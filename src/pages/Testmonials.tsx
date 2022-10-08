@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, GradientText, TestmonialCard } from "../components";
 import { reviews } from "../helper/constant";
 
 const Testmonials = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
-    <div className="py-10">
+    <div className="pb-10 pt-28">
       <GradientText
         className="text-[45px] text-center bg-gradient-to-r from-white to-main-teal"
         text="Don't just take our word for it."
@@ -51,6 +58,7 @@ const Testmonials = () => {
         </div>
       </div>
       <Button
+        OnClick={() => {}}
         text="Get Started"
         className="my-5 bg-main-teal border-2 border-main-teal text-white px-8 py-2 rounded-full hover:bg-transparent hover:text-main-teal block mx-auto"
       />
