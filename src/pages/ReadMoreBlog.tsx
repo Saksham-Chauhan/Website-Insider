@@ -5,7 +5,7 @@ import { Button, Divider } from "../components";
 const ReadMoreBlog = () => {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="py-16  w-[94%] mx-auto">
+    <div className="py-16 mt-10 w-[90%] sm:w-[94%] mx-auto">
       <Button
         OnClick={() => {}}
         logo={backAero}
@@ -28,7 +28,7 @@ const ReadMoreBlog = () => {
         <span className="text-white">Jhon Doe</span>
       </div>
       <Divider className="mt-4" />
-      <img src={wideBlog} alt="blog img" className="w-full h-96" />
+      <img src={wideBlog} alt="blog img" className="w-full md:h-96" />
       <Divider className="mt-6" />
       <p
         className="text-main-light_white"

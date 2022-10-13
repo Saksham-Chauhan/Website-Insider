@@ -1,5 +1,4 @@
 import React from "react";
-import { gradientStleObj } from "../helper/style";
 
 interface Props {
   className?: string;
@@ -7,7 +6,7 @@ interface Props {
 }
 const GradientText = ({ className, text }: Props) => {
   return (
-    <h1 className={`${className} font-medium`} style={{ ...gradientStleObj }}>
+    <h1 className={`${className} font-medium bg-clip-text text-transparent`}>
       {text}
     </h1>
   );

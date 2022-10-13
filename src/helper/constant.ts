@@ -53,7 +53,7 @@ export const footerButtons = [
   {
     title: "Legal",
     buttons: [
-      { title: "Privacy Policy", route: "", target: false },
+      { title: "Privacy Policy", route: "privacy-policy", target: false },
       { title: "Terms of Services", route: "", target: false },
       { title: "Cancellation", route: "", target: false },
       { title: "Refund", route: "", target: false },
@@ -90,4 +90,95 @@ export const typeOfProjects = [
   "Backend Development",
   "Web Scraper",
   "Discord Bots",
+];
+
+export interface CardObject {
+  isMobile?: boolean;
+  translateX?: number;
+  className?: string;
+  title: string;
+  description: string;
+  price: string;
+  services: Array<string>;
+}
+export const pricingCardData: Array<CardObject> = [
+  {
+    title: "Basic",
+    description: "The best plan to start your journey at Koders.",
+    price: "$10.99",
+    services: [
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "4TB Cloud Storage",
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "2TB Cloud Storage",
+    ],
+  },
+  {
+    title: "Basic Plus",
+    description: "The best plan to start your journey at Koders.",
+    price: "$10.99",
+    services: [
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "4TB Cloud Storage",
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "2TB Cloud Storage",
+    ],
+  },
+  {
+    title: "Premium",
+    description: "The best plan to start your journey at Koders.",
+    price: "$10.99",
+    services: [
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "4TB Cloud Storage",
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "2TB Cloud Storage",
+    ],
+  },
+  {
+    title: "Enterprise",
+    description: "The best plan to start your journey at Koders.",
+    price: "$10.99",
+    services: [
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "4TB Cloud Storage",
+      "Start Messaging",
+      "Flexible Team Meetings",
+      "2TB Cloud Storage",
+    ],
+  },
+];
+
+export const whyWe = [
+  {
+    class: "text-center border-r-2  border-main-teal",
+    title: "Company",
+    state: "01",
+    html: '<p class="font-battambangMedium px-2 md:px-3 lg:px-6 mt-2 text-main-light_white text-[16px]">Rest assured. Unlike freelancers,<span class="text-main-teal">  we are sticking till completion</span>.</p>',
+  },
+  {
+    class: "text-center border-r-2  border-main-teal",
+    title: "One Stop Solution",
+    state: "02",
+    html: ' <p class="font-battambangMedium px-2 md:px-3 lg:px-6 mt-2 text-main-light_white text-[16px]">Design+Frontend+Backend +Testing+QnA+Docs?<span class="text-main-teal"> We do it all</span>.</p>',
+  },
+  {
+    class: "text-center border-r-2  border-main-teal",
+    title: "Quality + Satisfaction",
+    state: "03",
+    html: '<p class="font-battambangMedium px-2 md:px-3 lg:px-6 mt-2 text-main-light_white text-[16px]"><span class="text-main-teal">Quality </span>delivery with 100%<span class="text-main-teal"> Satisfaction </span>or 100%refund.</p>',
+  },
+  {
+    class: "text-center",
+    title: "Your Code, Not Ours.",
+    state: "04",
+    html: ' <p class="font-battambangMedium px-2 md:px-3 lg:px-6 mt-2 text-main-light_white text-[16px]">We’re giving <span class="text-main-teal">IPR rights</span>, notjust the source code.</p>',
+  },
 ];

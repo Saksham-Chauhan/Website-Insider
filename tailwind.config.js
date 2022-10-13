@@ -8,6 +8,7 @@ module.exports = {
           secondary: "#20222A",
           primary: "#0A0A0A",
           teal: "#00A99D",
+          lightBg: "#151823",
           light_white: "rgba(255, 255, 255, 0.5)",
           greenOpt: {
             200: "rgba(0, 169, 157, 0.2)",
@@ -20,6 +21,10 @@ module.exports = {
           black: {
             700: "rgb(10,10,10,0.7)",
           },
+          white: {
+            500: "rgba(255, 255, 255, 0.05)",
+          },
+          lightTeal: "#b9f3ef",
         },
       },
       boxShadow: {
@@ -80,6 +85,17 @@ module.exports = {
             transform: "translate(195px, 81px)",
           },
         },
+      },
+      fontFamily: {
+        miligrambold: ["MILIGRAM BOLD"],
+        miligramLight: ["MILIGRAM LIGHT"],
+        miligramMedium: ["MILIGRAM MEDIUM"],
+        battambangMedium: ["BATTAMBANG MEDIUM"],
+        battambangBold: ["BATTAMBANG BOLD"],
+      },
+      screens: {
+        xsm: "300px",
+        msm: "340px",
       },
     },
   },
